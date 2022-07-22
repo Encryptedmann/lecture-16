@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lecture 16 | CSS table </title>
+    <link rel="shortcut icon" href="css logo.png" type="image/x-icon">
+
+
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            height: 100vh;
+            width: 100%;
+            background: url("fcbarcelona.PNG"); 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        
+        
+        .my-caption{
+            text-align: center;
+            color: white;
+            background-color: rgba(7, 52, 136, 0.068);
+        }
+        table{
+            position:absolute;
+            top: 35%;
+            left: 20px;
+            /* border: 1px solid rgb(241, 241, 248); */
+            border-collapse: collapse;
+            height: 60px;
+            width: 350px;
+        }
+        th, tr, td{
+            text-align: center;
+            color: white;
+            border-bottom: 1px solid rgba(182, 182, 238, 0.445);
+            /* border-bottom: 1px solid rgba(9, 9, 121, 0.445); */
+            border-collapse: collapse;
+            height: 60px;
+            width: 300px;
+
+        }
+        tr:nth-child(even){
+            background: rgba(0, 0, 0, 0.205);
+        }
+        tr:nth-child(odd){
+            background: rgba(0, 0, 0, 0.205);
+        }
+        
+        tr:hover{
+            background: rgba(117, 115, 126, 0.473); 
+        }
+        i{
+
+            background-color: white;
+            padding: 7px 10px;
+            border-radius: 50%;
+        }
+        i.fa-youtube{
+            background-color: white;
+            padding: 7.76px 7px;
+            border-radius: 50%;
+        }
+        i.fa-twitter{
+            background-color: white;
+            padding: 8px 7.76px;
+            border-radius: 50%;
+        }
+        .icons{
+            position: absolute;
+            bottom: 15%;
+            left: 10%;
+        }
+    
+    </style>
+    
+</head>
+
+
+<body>
+    
+        <section>
+                <table>
+                    <caption class="my-caption"> Transfer Table : FC Barcelona</caption>
+                    <thead>
+                        <tr>
+                            <th>Players</th>
+                            <th>Club</th>
+                            <th>Amount</th>
+                        </tr>
+                        
+                    </thead>
+                    
+
+                    <tr>
+                        <td>Robert Lewandowski</td>
+                        <td>FC Bayern</td>
+                        <td>€45</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Franck Kessie</td>
+                        <td>AC Milan</td>
+                        <td>Free Agent</td>
+                    </tr>
+                    <tr>
+                        <td>Rafinha</td>
+                        <td>Leeds</td>
+                        <td>€65</td>
+                    </tr>
+                    
+                </table>
+
+                <div class="icons">
+                    <h3 style="color: white;">Contact Us</h3>
+                    <i class="fa fa-facebook"></i>
+                <i class="fa fa-youtube"></i>
+                <i class="fa fa-twitter"></i>
+                </div>
+        </section>
+        
+    
+    <script src="https://kit.fontawesome.com/eb24cf668f.js" crossorigin="anonymous"></script>
+</body>
+</html>
